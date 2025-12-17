@@ -184,6 +184,11 @@ NGO101,2025-01,80,3,30000
 NGO102,2025-01,150,6,70000
 ```
 
+## 🌍 Live Demo
+
+Frontend: https://ngo-monthly-reporting-system.vercel.app  
+Backend: https://ngo-monthly-reporting-system.onrender.com
+
 ---
 
 📜 License
