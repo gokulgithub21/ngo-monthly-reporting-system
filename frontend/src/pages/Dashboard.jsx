@@ -7,7 +7,8 @@ function Dashboard() {
 
   const fetchData = async () => {
     const res = await axios.get(
-      `https://ngo-monthly-reporting-system.onrender.com/dashboard?month=${month}`
+      `https://ngo-monthly-reporting-system.onrender.com/dashboard?month=${month}git pull origin main --allow-unrelated-histories
+`
     );
     setData(res.data);
   };
