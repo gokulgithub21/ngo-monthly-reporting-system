@@ -11,7 +11,7 @@ function BulkUpload() {
     formData.append("file", file);
 
     const res = await axios.post(
-      "http://localhost:5000/reports/upload",
+      "https://ngo-monthly-reporting-system.onrender.com/reports/upload",
       formData
     );
     setJobId(res.data.job_id);
@@ -19,7 +19,7 @@ function BulkUpload() {
 
   const checkStatus = async () => {
     const res = await axios.get(
-      `http://localhost:5000/job-status/${jobId}`
+      `https://ngo-monthly-reporting-system.onrender.com/job-status/${jobId}`
     );
     setStatus(res.data);
   };

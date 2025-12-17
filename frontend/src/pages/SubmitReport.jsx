@@ -16,7 +16,7 @@ function SubmitReport() {
 
   const handleSubmit = async () => {
     try {
-      await axios.post("http://localhost:5000/report", form);
+      await axios.post("https://ngo-monthly-reporting-system.onrender.com/report", form);
       alert("Report submitted successfully");
       setForm({
         ngo_id: "",

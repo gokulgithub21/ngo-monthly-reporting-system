@@ -7,7 +7,7 @@ function Dashboard() {
 
   const fetchData = async () => {
     const res = await axios.get(
-      `http://localhost:5000/dashboard?month=${month}`
+      `https://ngo-monthly-reporting-system.onrender.com/dashboard?month=${month}`
     );
     setData(res.data);
   };
