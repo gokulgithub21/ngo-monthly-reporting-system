@@ -1,0 +1,14 @@
+# Node
+node_modules/
+
+# Environment files
+.env
+
+# Logs
+npm-debug.log*
+
+# Build
+dist/
+
+# Database (optional)
+ngo.db
