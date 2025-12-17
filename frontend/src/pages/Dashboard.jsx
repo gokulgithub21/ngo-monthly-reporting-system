@@ -6,9 +6,14 @@ function Dashboard() {
   const [data, setData] = useState(null);
 
   const fetchData = async () => {
+
+    if (!month) {
+      alert("Please enter a month (YYYY-MM)");
+      return;
+    }
+
     const res = await axios.get(
-      `https://ngo-monthly-reporting-system.onrender.com/dashboard?month=${month}git pull origin main --allow-unrelated-histories
-`
+      `https://ngo-monthly-reporting-system.onrender.com/dashboard?month=${month}`
     );
     setData(res.data);
   };
